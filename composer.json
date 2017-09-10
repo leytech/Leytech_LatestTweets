@@ -1,0 +1,13 @@
+{
+    "name": "leytech/leytech_latesttweets",
+    "type": "magento-module",
+    "description": "A simple Magento extension to get the latest tweets from Twitter for a given username. It uses the Twitter API v1.1.",
+    "homepage": "https://github.com/leytech/Leytech_LatestTweets",
+    "require": {
+        "php": ">=5.4.0",
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra":{
+        "magento-root-dir": "src/"
+    }
+}
