@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_LatestTweets
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2017 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <modules>
+        <Leytech_LatestTweets>
+            <version>1.0.0</version>
+        </Leytech_LatestTweets>
+    </modules>
+    <global>
+        <helpers>
+            <leytech_latesttweets>
+                <class>Leytech_LatestTweets_Helper</class>
+            </leytech_latesttweets>
+        </helpers>
+        <resources>
+            <leytech_latesttweets_setup>
+                <setup>
+                    <module>Leytech_LatestTweets</module>
+                    <class>Leytech_LatestTweets_Model_Resource_Mysql4_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </leytech_latesttweets_setup>
+        </resources>
+    </global>
+    <default>
+        <leytech_latesttweets>
+            <general>
+                <enabled>0</enabled>
+                <cache_lifetime>3600</cache_lifetime>
+            </general>
+        </leytech_latesttweets>
+    </default>
+</config>
